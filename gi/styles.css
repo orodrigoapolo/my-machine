@@ -1,0 +1,151 @@
+.conteine{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo{
+    font-size: 2rem;
+}
+
+.menu{
+    list-style:none;
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li{
+    position:relative;
+    float:left;
+    border-right:1px solid #c0c0c0;
+}
+
+.menu li a{color:#333; text-decoration:none; padding:5px 10px; display:block;}
+
+
+.menu li a:hover{
+    background:#333;
+    color:#fff;
+    -moz-box-shadow:0 3px 10px 0 #CCC;
+    -webkit-box-shadow:0 3px 10px 0 #ccc;
+    text-shadow:0px 0px 5px #fff;
+}
+
+.input_value{
+    margin-left: 10px;
+
+}
+
+.btn{
+    margin-left: 10px;
+}
+
+.mensagem{
+    margin: 10px;
+    font-size: 1rem;
+}
+
+.value_mensagem{
+ 
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center; 
+}
+
+h1.titulo {
+    text-align: center;
+    color: #2fb5f3;
+    border: 2px solid #2fb5f3; 
+    border-radius: 8px; 
+    padding: 10px;
+    display: inline-block; 
+}
+
+.menu {
+    text-align: center; 
+    padding: 10px 0;
+}
+
+.menu li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.input_value {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    display: inline-block; 
+}
+
+button.btn {
+    padding: 10px 20px;
+    background-color: #2fb5f3;
+    color: white;
+    border: 2px solid #2fb5f3; 
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block; 
+}
+
+button.btn:hover {
+    background-color: #2fb5f3;
+    border-color: #2fb5f3; 
+}
+
+table.resultado-tabela {
+    margin: 20px auto; 
+    width: 50%;
+    max-width: 600px; 
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table.resultado-tabela th {
+    background-color: #2fb5f3;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 18px;
+}
+
+table.resultado-tabela td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+table.resultado-tabela tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table.resultado-tabela tr:last-child td {
+    border-bottom: none;
+}
+
+.mensagem.erro {
+    color: red;
+    margin-top: 20px;
+}

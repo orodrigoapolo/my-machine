@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine GI</title>
+</head>
+<body>
+    <div class="conteine"><h1 class="titulo">Machine Gi</h1></div>
+    <nav class="menu conteine">
+        <li><a href="index.html" >Decimal</a></li>
+        <li><a href="binario.html">Binario</a></li>
+        <li><a href="octal.html">Octal</a></li>
+        <li><a href="hexadecimal.html">Hexadecimal</a></li>
+    </nav>
+    <div class="input_value">
+        <h3>Hexadecimal</h3>
+        <input id="ipt_valor_hexa" type="text" placeholder="Digite o valor em hexadecimal">
+
+        <button class="btn" onclick="converter()">Converter</button>
+    </div>
+    <div id="div_mensagem"></div>
+</body>
+</html>
+<script>
+    function converter(){
+        var hexadecimal = ipt_valor_hexa.value
+        var mensagem = ``
+      
+        var decimal = parseInt(hexadecimal,16)
+        var octal = decimal.toString(8)
+        var binario = decimal.toString(2)
+
+        mensagem += `<table border="1" cellpadding="5" cellspacing="0">
+                <tr>
+                    <th>Base</th>
+                    <th>Valor</th>
+                </tr>
+                <tr>
+                    <td>Decimal</td>
+                    <td>${decimal}</td>
+                </tr>
+                <tr>
+                    <td>Octal</td>
+                    <td>${octal}</td>
+                </tr>
+                <tr>
+                    <td>Binário</td>
+                    <td>${binario}</td>
+                </tr>
+            </table>`;
+
+        div_mensagem.innerHTML = mensagem 
+
+    }
+    function octal() {
+
+    }
+</script>
