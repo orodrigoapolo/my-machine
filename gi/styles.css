@@ -149,3 +149,9 @@ table.resultado-tabela tr:last-child td {
     color: red;
     margin-top: 20px;
 }
+
+table{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
